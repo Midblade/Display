@@ -1,37 +1,50 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="9" x="231" y="76">
+  <block type="movement_forward" id="193" x="230" y="38">
     <next>
-      <block type="oled_setcursor" id="26" inline="true">
-        <value name="STARTX">
-          <block type="math_number" id="59">
-            <field name="NUM">10</field>
-          </block>
-        </value>
-        <value name="STARTY">
-          <block type="math_number" id="66">
-            <field name="NUM">10</field>
+      <block type="robot_delay" id="225" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="290">
+            <field name="NUM">5000</field>
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="93">
-            <field name="TEXT">Soundwave superior,</field>
+          <block type="oled_cleardisplay" id="9">
             <next>
-              <block type="oled_setcursor" id="134" inline="true">
+              <block type="oled_setcursor" id="26" inline="true">
                 <value name="STARTX">
-                  <block type="math_number" id="165">
-                    <field name="NUM">20</field>
+                  <block type="math_number" id="59">
+                    <field name="NUM">10</field>
                   </block>
                 </value>
                 <value name="STARTY">
-                  <block type="math_number" id="172">
-                    <field name="NUM">20</field>
+                  <block type="math_number" id="66">
+                    <field name="NUM">10</field>
                   </block>
                 </value>
                 <next>
-                  <block type="oled_drawtext" id="182">
-                    <field name="TEXT">autobots inferior.</field>
+                  <block type="oled_drawtext" id="93">
+                    <field name="TEXT">Soundwave superior,</field>
                     <next>
-                      <block type="movement_stop" id="103"></block>
+                      <block type="oled_setcursor" id="134" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="165">
+                            <field name="NUM">20</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="172">
+                            <field name="NUM">20</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="oled_drawtext" id="182">
+                            <field name="TEXT">autobots inferior.</field>
+                            <next>
+                              <block type="movement_stop" id="103"></block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
