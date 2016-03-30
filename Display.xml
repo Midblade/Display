@@ -14,9 +14,28 @@
         </value>
         <next>
           <block type="oled_drawtext" id="93">
-            <field name="TEXT">Soundwave superior, autobots inferior</field>
+            <field name="TEXT">Soundwave superior,</field>
             <next>
-              <block type="movement_stop" id="103"></block>
+              <block type="oled_setcursor" id="134" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="165">
+                    <field name="NUM">20</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="172">
+                    <field name="NUM">20</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_drawtext" id="182">
+                    <field name="TEXT">autobots inferior.</field>
+                    <next>
+                      <block type="movement_stop" id="103"></block>
+                    </next>
+                  </block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
