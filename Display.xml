@@ -1,46 +1,69 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="193" x="230" y="38">
+  <block type="oled_cleardisplay" id="1" x="249" y="164">
     <next>
-      <block type="robot_delay" id="225" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="290">
-            <field name="NUM">5000</field>
+      <block type="oled_setcursor" id="2" inline="true">
+        <value name="STARTX">
+          <block type="math_number" id="3">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <value name="STARTY">
+          <block type="math_number" id="4">
+            <field name="NUM">10</field>
           </block>
         </value>
         <next>
-          <block type="oled_cleardisplay" id="9">
+          <block type="oled_drawtext" id="5">
+            <field name="TEXT">Soundwave superior,</field>
             <next>
-              <block type="oled_setcursor" id="26" inline="true">
+              <block type="oled_setcursor" id="6" inline="true">
                 <value name="STARTX">
-                  <block type="math_number" id="59">
-                    <field name="NUM">10</field>
+                  <block type="math_number" id="7">
+                    <field name="NUM">20</field>
                   </block>
                 </value>
                 <value name="STARTY">
-                  <block type="math_number" id="66">
-                    <field name="NUM">10</field>
+                  <block type="math_number" id="8">
+                    <field name="NUM">20</field>
                   </block>
                 </value>
                 <next>
-                  <block type="oled_drawtext" id="93">
-                    <field name="TEXT">Soundwave superior,</field>
+                  <block type="oled_drawtext" id="9">
+                    <field name="TEXT">autobots inferior!</field>
                     <next>
-                      <block type="oled_setcursor" id="134" inline="true">
-                        <value name="STARTX">
-                          <block type="math_number" id="165">
-                            <field name="NUM">20</field>
-                          </block>
-                        </value>
-                        <value name="STARTY">
-                          <block type="math_number" id="172">
-                            <field name="NUM">20</field>
-                          </block>
-                        </value>
+                      <block type="oled_cleardisplay" id="10">
                         <next>
-                          <block type="oled_drawtext" id="182">
-                            <field name="TEXT">autobots inferior.</field>
+                          <block type="oled_setcursor" id="11" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="12">
+                                <field name="NUM">20</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="99">
+                                <field name="NUM">20</field>
+                              </block>
+                            </value>
                             <next>
-                              <block type="movement_stop" id="103"></block>
+                              <block type="multimedia_displaybmp" id="159">
+                                <field name="BMP">deceptic.bmp</field>
+                                <next>
+                                  <block type="movement_forward" id="14">
+                                    <next>
+                                      <block type="robot_delay" id="15" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="16">
+                                            <field name="NUM">5000</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="movement_stop" id="17"></block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
