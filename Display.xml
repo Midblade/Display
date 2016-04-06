@@ -62,9 +62,18 @@
                                       <block type="multimedia_displaybmp" id="14">
                                         <field name="BMP">deceptic.bmp</field>
                                         <next>
-                                          <block type="oled_cleardisplay" id="414">
+                                          <block type="robot_delay" id="429" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="446">
+                                                <field name="NUM">3000</field>
+                                              </block>
+                                            </value>
                                             <next>
-                                              <block type="movement_stop" id="15"></block>
+                                              <block type="oled_cleardisplay" id="414">
+                                                <next>
+                                                  <block type="movement_stop" id="15"></block>
+                                                </next>
+                                              </block>
                                             </next>
                                           </block>
                                         </next>
