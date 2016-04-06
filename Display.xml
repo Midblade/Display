@@ -40,28 +40,15 @@
                               </block>
                             </value>
                             <value name="STARTY">
-                              <block type="math_number" id="99">
+                              <block type="math_number" id="13">
                                 <field name="NUM">20</field>
                               </block>
                             </value>
                             <next>
-                              <block type="multimedia_displaybmp" id="159">
+                              <block type="multimedia_displaybmp" id="14">
                                 <field name="BMP">deceptic.bmp</field>
                                 <next>
-                                  <block type="movement_forward" id="14">
-                                    <next>
-                                      <block type="robot_delay" id="15" inline="true">
-                                        <value name="DELAY">
-                                          <block type="math_number" id="16">
-                                            <field name="NUM">5000</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="movement_stop" id="17"></block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
+                                  <block type="movement_stop" id="18"></block>
                                 </next>
                               </block>
                             </next>
