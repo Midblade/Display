@@ -62,12 +62,7 @@
                                       <block type="multimedia_displaybmp" id="14">
                                         <field name="BMP">deceptic.bmp</field>
                                         <next>
-                                          <block type="multimedia_playwav" id="278">
-                                            <field name="WAV">transfor.wav</field>
-                                            <next>
-                                              <block type="movement_stop" id="15"></block>
-                                            </next>
-                                          </block>
+                                          <block type="movement_stop" id="15"></block>
                                         </next>
                                       </block>
                                     </next>
