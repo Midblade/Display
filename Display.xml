@@ -77,7 +77,7 @@
                                                 </value>
                                                 <value name="STARTY">
                                                   <block type="math_number" id="278">
-                                                    <field name="NUM">50</field>
+                                                    <field name="NUM">0</field>
                                                   </block>
                                                 </value>
                                                 <next>
