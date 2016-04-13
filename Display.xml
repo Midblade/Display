@@ -91,7 +91,7 @@
                                                         </value>
                                                         <next>
                                                           <block type="oled_drawtext" id="405">
-                                                            <field name="TEXT">ERROR:54434-RAM-CRASH</field>
+                                                            <field name="TEXT">ERROR:54434-JADE-CRASH</field>
                                                             <next>
                                                               <block type="movement_stop" id="22"></block>
                                                             </next>
