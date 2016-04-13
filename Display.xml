@@ -106,9 +106,28 @@
                                                                 </value>
                                                                 <next>
                                                                   <block type="oled_drawtext" id="714">
-                                                                    <field name="TEXT">TRYING TO FIX, PLEASE WAIT</field>
+                                                                    <field name="TEXT">TRYING TO FIX</field>
                                                                     <next>
-                                                                      <block type="movement_stop" id="22"></block>
+                                                                      <block type="oled_setcursor" id="733" inline="true">
+                                                                        <value name="STARTX">
+                                                                          <block type="math_number" id="740">
+                                                                            <field name="NUM">0</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="STARTY">
+                                                                          <block type="math_number" id="747">
+                                                                            <field name="NUM">20</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="oled_drawtext" id="795">
+                                                                            <field name="TEXT">PLEASE WAIT</field>
+                                                                            <next>
+                                                                              <block type="movement_stop" id="22"></block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
                                                                     </next>
                                                                   </block>
                                                                 </next>
