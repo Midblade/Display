@@ -63,7 +63,7 @@
                                         <field name="BMP">deceptic.bmp</field>
                                         <next>
                                           <block type="multimedia_playwav" id="32">
-                                            <field name="WAV">Transfor.wav</field>
+                                            <field name="WAV">transfor.wav</field>
                                             <next>
                                               <block type="robot_delay" id="19" inline="true">
                                                 <value name="DELAY">
