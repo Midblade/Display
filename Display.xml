@@ -93,7 +93,26 @@
                                                           <block type="oled_drawtext" id="405">
                                                             <field name="TEXT">ERROR:5742-JADE-CRASH</field>
                                                             <next>
-                                                              <block type="movement_stop" id="22"></block>
+                                                              <block type="oled_setcursor" id="649" inline="true">
+                                                                <value name="STARTX">
+                                                                  <block type="math_number" id="656">
+                                                                    <field name="NUM">10</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="STARTY">
+                                                                  <block type="math_number" id="666">
+                                                                    <field name="NUM">0</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="oled_drawtext" id="714">
+                                                                    <field name="TEXT">TRYING TO FIX, PLEASE WAIT</field>
+                                                                    <next>
+                                                                      <block type="movement_stop" id="22"></block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
                                                             </next>
                                                           </block>
                                                         </next>
