@@ -81,7 +81,7 @@
                                                       <block type="oled_setcursor" id="258" inline="true">
                                                         <value name="STARTX">
                                                           <block type="math_number" id="268">
-                                                            <field name="NUM">0</field>
+                                                            <field name="NUM">20</field>
                                                           </block>
                                                         </value>
                                                         <value name="STARTY">
@@ -91,7 +91,7 @@
                                                         </value>
                                                         <next>
                                                           <block type="oled_drawtext" id="405">
-                                                            <field name="TEXT">ERROR:54434-JADE-CRASH</field>
+                                                            <field name="TEXT">ERROR:5742-JADE-CRASH</field>
                                                             <next>
                                                               <block type="movement_stop" id="22"></block>
                                                             </next>
