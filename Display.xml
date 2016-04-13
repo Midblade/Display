@@ -69,27 +69,22 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="multimedia_playwav" id="211">
-                                                <field name="WAV">beep.wav</field>
+                                              <block type="oled_setcursor" id="258" inline="true">
+                                                <value name="STARTX">
+                                                  <block type="math_number" id="268">
+                                                    <field name="NUM">50</field>
+                                                  </block>
+                                                </value>
+                                                <value name="STARTY">
+                                                  <block type="math_number" id="278">
+                                                    <field name="NUM">50</field>
+                                                  </block>
+                                                </value>
                                                 <next>
-                                                  <block type="oled_setcursor" id="258" inline="true">
-                                                    <value name="STARTX">
-                                                      <block type="math_number" id="268">
-                                                        <field name="NUM">50</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="STARTY">
-                                                      <block type="math_number" id="278">
-                                                        <field name="NUM">50</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="oled_drawtext" id="405">
+                                                    <field name="TEXT">ERROR:54434-RAM-CRASH</field>
                                                     <next>
-                                                      <block type="oled_drawtext" id="405">
-                                                        <field name="TEXT">ERROR:54434-RAM-CRASH</field>
-                                                        <next>
-                                                          <block type="movement_stop" id="22"></block>
-                                                        </next>
-                                                      </block>
+                                                      <block type="movement_stop" id="22"></block>
                                                     </next>
                                                   </block>
                                                 </next>
