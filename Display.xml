@@ -162,7 +162,30 @@
                                                                                                   <block type="oled_drawtext" id="1022">
                                                                                                     <field name="TEXT">SYSTEM RESTART</field>
                                                                                                     <next>
-                                                                                                      <block type="movement_stop" id="22"></block>
+                                                                                                      <block type="robot_delay" id="1139" inline="true">
+                                                                                                        <value name="DELAY">
+                                                                                                          <block type="math_number" id="1178">
+                                                                                                            <field name="NUM">2000</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="oled_setcursor" id="1031" inline="true">
+                                                                                                            <value name="STARTX">
+                                                                                                              <block type="math_number" id="1050">
+                                                                                                                <field name="NUM">0</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <value name="STARTY">
+                                                                                                              <block type="math_number" id="1063">
+                                                                                                                <field name="NUM">0</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <next>
+                                                                                                              <block type="movement_stop" id="22"></block>
+                                                                                                            </next>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
                                                                                                     </next>
                                                                                                   </block>
                                                                                                 </next>
