@@ -106,7 +106,7 @@
                                                                 </value>
                                                                 <next>
                                                                   <block type="oled_drawtext" id="714">
-                                                                    <field name="TEXT">TRYING TO FIX</field>
+                                                                    <field name="TEXT">TRYING TO FIX ERROR</field>
                                                                     <next>
                                                                       <block type="oled_setcursor" id="733" inline="true">
                                                                         <value name="STARTX">
