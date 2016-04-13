@@ -62,16 +62,21 @@
                                       <block type="multimedia_displaybmp" id="18">
                                         <field name="BMP">deceptic.bmp</field>
                                         <next>
-                                          <block type="robot_delay" id="19" inline="true">
-                                            <value name="DELAY">
-                                              <block type="math_number" id="20">
-                                                <field name="NUM">3000</field>
-                                              </block>
-                                            </value>
+                                          <block type="multimedia_playwav" id="32">
+                                            <field name="WAV">Transfor.wav</field>
                                             <next>
-                                              <block type="oled_cleardisplay" id="21">
+                                              <block type="robot_delay" id="19" inline="true">
+                                                <value name="DELAY">
+                                                  <block type="math_number" id="20">
+                                                    <field name="NUM">3000</field>
+                                                  </block>
+                                                </value>
                                                 <next>
-                                                  <block type="movement_stop" id="22"></block>
+                                                  <block type="oled_cleardisplay" id="21">
+                                                    <next>
+                                                      <block type="movement_stop" id="22"></block>
+                                                    </next>
+                                                  </block>
                                                 </next>
                                               </block>
                                             </next>
