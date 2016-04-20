@@ -160,7 +160,7 @@
                                                                                                 </value>
                                                                                                 <next>
                                                                                                   <block type="oled_drawtext" id="46">
-                                                                                                    <field name="TEXT">SYSTEM RESTART REQUIRED</field>
+                                                                                                    <field name="TEXT">SYSTEM RESTART NEEDED</field>
                                                                                                     <next>
                                                                                                       <block type="robot_delay" id="47" inline="true">
                                                                                                         <value name="DELAY">
